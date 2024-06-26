@@ -61,22 +61,3 @@ int main() {
     return 0;
 }
 
-SAMPLE INPUT:
-// Example AST representing a simple arithmetic expression: (a + b) * c
-ASTNode* rootNode = createNode("*", 2);
-rootNode->children[0] = createNode("+", 2);
-rootNode->children[0]->children[0] = createNode("a", 0);
-rootNode->children[0]->children[1] = createNode("b", 0);
-rootNode->children[1] = createNode("c", 0);
-
-SAMPLE OUTPUT:
-
-
-      *
-     / \
-    +   c
-   / \
-  a   b
-Output: Generated code: a b + c *
- 
- 
